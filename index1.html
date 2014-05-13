@@ -2,9 +2,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <head>
-<TITLE>mojastrona</TITLE>
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=iso-8859-2 ">
-<link rel="stylesheet" type="text/css" href="styl.css">
+<?php
+require_once('mirvanos_contact.php');
+$contact = new mirvanosContact();
+?> 
 </HEAD>
  
 	  <style type="text/css">
@@ -51,7 +52,9 @@
 		<p align="right">A.C.Doyle, "Studium w szkarłacie"</p>
 </TD></TR></TABLE><BR>
 
-
+<?php
+echo $contact->getHtml();
+?> 
 <?php
 // sciezka do styli formularza, mozna dac pusta
 define('INCLUDE_CSS',       'css/mirvanos_contact.css');
