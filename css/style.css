@@ -1,0 +1,32 @@
+body {
+ font-size: small;
+ color: #55032B;
+}
+
+#content {
+ width: 600px;
+ margin: 5px auto;
+}
+
+#footer {
+ width: 400px;
+ margin: 6px auto;
+}
+
+div.box, div.box .box_tl, div.box .box_tr, div.box .box_bl, div.box .box_br {
+ position:relative; height:auto!important; height:30px; min-height:30px; position:relative; clear:both;
+}
+div.box {
+ border:1px solid #DADCDF; background:#fff; margin-bottom:10px;
+}
+div.box .box_tl {
+ background:url('/kontakt/images/x_box_t.png') 0 0 no-repeat; left:-1px; top:-1px;
+}
+div.box .box_tr {
+ background:url('/kontakt/images/x_box_t.png') 100% 0 no-repeat; right:-2px;
+}
+div.box .box_br {
+ background:url('/kontakt/images/x_box_b.png') 100% 100% no-repeat; bottom:-2px; right:0;
+}
+div.box .box_bl {
+ background:url('/kontakt/images/x_box_b.png') 0 100% no-repeat ; left:-2px; padding:12px 10px;
