@@ -60,7 +60,7 @@ Hej mam na imię Maciek i witam Cię na mojej stronie! &nbsp;&nbsp;&nbsp;</TD>
 <input type="radio" name="Płeć" value="Kobieta" />Kobieta
 <input type="radio" name="Płeć" value="Mężczyzna" />Mężczyzna
 <!-- Pole typu RADIO -->
-<p>Gdybyś mógł/mogła cofnąć się w czasie w jakie lata wybrałbyś/wybrałabyś?</p>
+<p>Gdybyś mógł/mogła cofnąć się w czasie, jakie lata wybrałbyś/wybrałabyś?</p>
 <input type="radio" name="Wiek" value="lata 40 XX wieku" />lata 40-ste XX wieku<br />
 <input type="radio" name="Wiek" value="lata 50 XX wieku" />lata 50-ste XX wieku<br />
 <input type="radio" name="Wiek" value="lata 60 XX wieku" />lata 60-ste XX wieku<br />
@@ -87,16 +87,20 @@ Hej mam na imię Maciek i witam Cię na mojej stronie! &nbsp;&nbsp;&nbsp;</TD>
 	<option>Inna</option>
 </select>
 <!-- Lista rozwijalna (typ rozszerzony) z zaznaczoną opcją domyślną i zmniejszoną wysokością -->
-<p>Jakie znasz systemy operacyjne (możesz wybrać kilka opcji trzymając klawisz Ctrl)?</p>
+<p>Jakie znasz języki programowania (możesz wybrać kilka opcji trzymając klawisz Ctrl)?</p>
 <select name="System operacyjny" multiple="multiple" size="3">
-	<option selected="selected">Dos</option>
-	<option>Windows</option>
-	<option>Linux</option>
-	<option>Inny</option>
+	<option selected="selected">C</option>
+	<option>JavaScript</option>
+	<option>Python</option>
+	<option>C++</option>
+		<option>Ruby</option>
+			<option>Perl</option>
+				<option>MATLAB</option>
+					<option>Inny</option>
 </select>
 <!-- Pole komentarza (o powiększonych rozmiarach oraz z tekstem domyślnym) -->
-<p>Podaj swój komentarz:</p>
-<textarea name="Komentarz" cols="50" rows="10">Proszę, wpisz tutaj jakiś komentarz...</textarea>
+<p>Wyślij do mnie wiadomość:</p>
+<textarea name="Komentarz" cols="50" rows="10">Proszę, wpisz śmiało tutaj swój tekst...</textarea>
 <br /><br /><br />
 <!-- Przycisk WYŚLIJ -->
 <input type="submit" value="Wyślij formularz" />
