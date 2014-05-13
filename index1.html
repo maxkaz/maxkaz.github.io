@@ -51,31 +51,26 @@
 		<p align="right">A.C.Doyle, "Studium w szkarłacie"</p>
 </TD></TR></TABLE><BR>
 
-<form action="mailto:samorzad47@wp.pl" method="post" enctype="text/plain">
 
-	<input type="text" name="imie" /><br />
+<?php
+// sciezka do styli formularza, mozna dac pusta
+define('INCLUDE_CSS',       'css/mirvanos_contact.css');
+// sciezka do klasy phpmailera
+define('CLASS_PHPMAILER',   'class.phpmailer-lite.php');
+//temat maila
+define('MAIL_SUBJECT',      'Nowa wiadomość z demo.mirvanos.org/kontakt');
+// Twoj adres email, na niego przyjda wiadomosci
+define('ADRES_EMAIL',       'mirvanos@gmail.com');
+// Twoje Imie i nazwisko - aby mail ladnie wygladal :)
+define('TWOJA_NAZWA',       'Mirosław Nawrocki');
+// Komunikat na stronie po wyslaniu maila
+define('WIADOMOSC_ZOSTALA_WYSLANA', 'Dziękujemy! Wiadomość została wysłana - Postaramy się odpowiedzieć jak najszybciej. ');
+// czy uzywac obrazkow CAPTCHA do zabezpieczenia przed botami  - zalecane
+define('USE_CAPTCHA',   TRUE);
+// zmiana z utf8 na iso-8859-2
+define('USE_ICONV_CONVERT',     TRUE);
 
-	<input type="text" name="email" /><br />
-
-	<textarea name="tresc" cols="20" rows="10"></textarea><br />
-
-	<input type="submit" value="Wyślij" />
-
-</form>
-		
-		
-		
-		</TD>
-	</TR>
-	<TR>
-		<TD COLSPAN=3>
-			<IMG SRC="images/index_09.gif" WIDTH=750 HEIGHT=14 ALT=""></TD>
-	</TR>
-	<TR>
-		<TD COLSPAN=3  style="background:URL('images/index_10.gif');" width=750 height=34 align=center class="stopka">
-			Wszelkie Prawa Zastrzeżone. Design by <A HREF="http://www.szablony.maniak.pl" TARGET="_blank" class="dwa"><B>SZABLONY</B>.maniak.pl</A>.</TD>
-	</TR>
-</TABLE>
-</td><td width="1" bgcolor="white"></TD></tr></table>
+	
+</TD></tr></table>
 </BODY>
 </HTML>
